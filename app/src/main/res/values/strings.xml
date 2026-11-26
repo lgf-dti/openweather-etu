@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Mes notes</string>
+
+    <!-- Titres des écrans (affichés en haut de chaque fragment et utilisés comme labels du graphe) -->
+    <string name="title_notes_list">Mes notes</string>
+    <string name="title_note_create">Nouvelle note</string>
+
+    <!-- Écran liste -->
+    <string name="notes_empty">Aucune note pour l\'instant.\nAppuyez sur « Créer une note » pour commencer.</string>
+    <string name="action_add_note">Créer une note</string>
+
+    <!-- Écran création -->
+    <string name="actualiser">Actualiser</string>
+    <string name="details">Détails</string>
+    <string name="meteo_pas_chargee">Les données météo ne sont pas encore chargées</string>
+    <string name="format_temperature">%1$.1f °C</string>
+    <string name="format_details">%1$s · humidité %2$d %%</string>
+</resources>

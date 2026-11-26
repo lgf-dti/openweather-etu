@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Graphe de navigation : les destinations (fragments) et les actions (transitions) entre elles.
+    Les labels documentent chaque destination (ils serviraient de titre si une Toolbar était branchée).
+-->
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/meteoFragment">
+
+    <fragment
+        android:id="@+id/meteoFragment"
+        android:name="com.example.mvvm_note.ui.fragment.MeteoFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_meteo" >
+        <action
+            android:id="@+id/action_meteoFragment_to_meteoDetailsFragment"
+            app:destination="@id/meteoDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/meteoDetailsFragment"
+        android:name="com.example.mvvm_note.ui.fragment.MeteoDetailsFragment"
+        android:label="MeteoDetailsFragment" >
+        <argument
+            android:name="Temp"
+            app:argType="string" />
+    </fragment>
+</navigation>
